@@ -1,0 +1,126 @@
+@keyframes backgroundChange {
+    0% {
+        background-image: url('/images/gambar1.gif');
+    }
+    33% {
+        background-image: url('/images/gambar2.gif');
+    }
+    66% {
+        background-image: url('/images/gambar3.gif');
+    }
+    100% {
+        background-image: url('/images/gambar4.gif');
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundChange 15s infinite;
+}
+
+.container,
+.forecast-info-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 50px;
+    /* Add margin to create space between containers */
+}
+
+.forecast-info-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    /* Add margin to create space between containers */
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+.weather-info,
+.forecast-info {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+h2,
+h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.weather-info p,
+.forecast-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.forecast-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.error {
+    margin-top: 20px;
+    color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.2);
+    padding: 10px;
+    border-radius: 4px;
+}
